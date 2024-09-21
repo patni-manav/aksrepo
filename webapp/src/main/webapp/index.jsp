@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Refresh Page</title>
+<script>
+        // Function to refresh the page every 10 seconds
+        function refreshPage() {
+            setTimeout(function() {
+                location.reload();
+            }, 10000); // 10000 milliseconds = 10 seconds
+        }
+</script>
+</head>
+<body onload="refreshPage()">
+<h1>This page will refresh every 10 seconds</h1>
+</body>
+</html>
+
+
 <form action="action_page.php">
   <div class="container">
     <h1>Hi Wre are learninig Devops</h1>
@@ -35,3 +56,5 @@
    <h1> we are learning devops</h1>
   
 </form>
+</body>
+</html>
