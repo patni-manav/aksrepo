@@ -21,7 +21,7 @@
 
 <form action="action_page.php">
   <div class="container">
-    <h1>Hi Wre are learninig Devops</h1>
+    <h1>Project by Manav Patni</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
      
