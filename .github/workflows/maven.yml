@@ -60,6 +60,6 @@ jobs:
         ECR_REPOSITORY: project-code
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        kubectl apply -f regapp-deployment.yml
+        kubectl apply -f regapp-deploy.yml
         kubectl apply -f regapp-service.yml
 
