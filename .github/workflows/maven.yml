@@ -42,7 +42,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t project-code .
+        docker build -t project-code:latest -f Dockerfile .
         docker tag project-code:latest 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latest
         docker push 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latest
 
