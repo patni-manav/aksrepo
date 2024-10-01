@@ -57,7 +57,7 @@ jobs:
     - name: Deploy to EKS
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: github-repo
+        ECR_REPOSITORY: project-code
         IMAGE_TAG: ${{ github.sha }}
       run: |
         kubectl apply -f regapp-deployment.yml
