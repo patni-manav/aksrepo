@@ -41,7 +41,8 @@ jobs:
           # push it to ECR so that it can
           # be deployed to ECS.
           docker build -t project-code .
-          docker tag project-code:latest 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latestdocker push 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latest
+          docker tag project-code:latest 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latest
+          docker push 816069121964.dkr.ecr.ap-northeast-3.amazonaws.com/project-code:latest
           echo "image=$ECR_REGISTRY/$REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT    
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
